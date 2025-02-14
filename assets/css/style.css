@@ -1,0 +1,159 @@
+/* Your styles here */
+
+/* cose fondamentali per il setting del css */
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  padding: 0.5em 20px;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: 600;
+  margin: 0.25em 0;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1em;
+}
+
+ul,
+ol {
+  padding-left: 1em;
+  margin: 1em 0 1em 1em;
+  font-weight: 300;
+}
+
+li {
+  line-height: 1.6;
+  font-weight: 300;
+  margin: 0.25em 0; /* TOP 0.25, BOTTOM 0.25, 0 LEFT, 0 RIGHT*/
+}
+
+/* ora stile della pagina */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9edee;
+}
+
+header {
+  background-color: #222f3e;
+}
+
+nav {
+  background-color: #35485a;
+}
+
+header img {
+  width: 10%;
+  margin: 10px 0px 0px 10px;
+}
+
+nav ul,
+a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li {
+  font-size: 1.3em;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+main {
+  margin: 0 2%;
+}
+
+.orangeBG {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px;
+  background-color: #f56600;
+}
+
+.banner {
+  background-image: url("../images/bg-image.png");
+  margin: 30px 0px;
+  padding: 60px 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 2rem;
+}
+.banner p {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: 1.5em;
+}
+
+.cardSec {
+  background-color: white;
+  padding: 10px; /* Padding aggiuntivo per il contenitore */
+}
+
+.cardSec p {
+  font-size: 1.5rem;
+  margin: 10px 10px; /* margine superiore e laterale */
+}
+
+.cards-container {
+  text-align: center; /* Centra le card all'interno del contenitore */
+}
+
+.card {
+  display: inline-block; /* Imposta la disposizione orizzontale */
+  width: 22%; /* Larghezza delle card */
+  margin-right: 2%; /* Distanza tra le card */
+  margin-bottom: 20px; /* Distanza tra le righe */
+  box-sizing: border-box;
+  border-radius: 30px; /* Raggio di arrotondamento maggiore */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  height: 400px; /* Altezza fissa per tutte le card */
+  background-color: #f4f4f4; /* Colore di sfondo per le card */
+  overflow: hidden; /* Nasconde il contenuto che fuoriesce */
+}
+
+.card img {
+  width: 100%; /* Adatta l'immagine alla larghezza della card */
+  height: 100%; /* Adatta l'immagine alla altezza della card */
+  object-fit: cover; /* Adatta l'immagine senza distorsioni */
+  border-radius: 30px 30px 0 0; /* Arrotonda solo gli angoli superiori dell'immagine */
+}
+
+.imgS {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.imgS img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  background-color: #222f3e;
+}
+
+footer img {
+  padding: 30px 0px;
+  width: 150px;
+}
+
+footer section {
+  padding: 10px 0px;
+  background-color: #35485a;
+}
