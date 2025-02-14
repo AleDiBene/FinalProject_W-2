@@ -19,14 +19,25 @@ for(let i = 0; i < pets.length; i++){
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
+   pets.sort()
+   console.log(pets)
+
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
+  pets.sort()
+   console.log(pets.reverse())
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+
+let element = pets.shift(); // 'dog'
+pets.push(element);
+// stavo impazzendo perchè non vedevo dog alla FinalizationRegistry, poi ho capito che lui prende il pets modificato dell'ultimo esercizio
+console.log(pets);
+
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -52,15 +63,43 @@ const cars = [
   },
 ]
 
+for (let i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = 'ciao'; 
+}
+
+console.log(cars);
+
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 
+cars.push({
+  brand: 'Volkswagen',
+  model: 'Golf',
+  color: 'white',
+  trims: ['GTI', 'R-line', 'Comfortline'],
+});
+
+for (let i = 0; i < cars.length; i++) {
+  cars[i].trims.pop();
+}
+
+console.log(cars);
+
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = []
+  for (let i = 0; i < cars.length; i++) {
+    justTrims.push(cars[i].trims[0]);
+  }
+
+  console.log(justTrims)
+
+
+
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
