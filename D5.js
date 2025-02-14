@@ -127,9 +127,7 @@ while(i < numericArray.length){
    if(numericArray[i] === 32){
     break;
   }
-
   i++;
- 
 }
 
 
@@ -137,5 +135,122 @@ while(i < numericArray.length){
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
-*/
-const charactersArray = ['g', 'n', 'u', 'z', 'd'];
+*/const charactersArray = ['g', 'n', 'u', 'z', 'd'];
+
+const position = [];
+
+for (let i = 0; i < charactersArray.length; i++) {
+  let letter = charactersArray[i];
+
+  switch (letter) {
+    case 'a':
+      position.push(1);
+      console.log(1);
+      break;
+    case 'b':
+      position.push(2);
+      console.log(2);
+      break;
+    case 'c':
+      position.push(3);
+      console.log(3);
+      break;
+    case 'd':
+      position.push(4);
+      console.log(4);
+      break;
+    case 'e':
+      position.push(5);
+      console.log(5);
+      break;
+    case 'f':
+      position.push(6);
+      console.log(6);
+      break;
+    case 'g':
+      position.push(7);
+      console.log(7);
+      break;
+    case 'h':
+      position.push(8);
+      console.log(8);
+      break;
+    case 'i':
+      position.push(9);
+      console.log(9);
+      break;
+    case 'j':
+      position.push(10);
+      console.log(10);
+      break;
+    case 'k':
+      position.push(11);
+      console.log(11);
+      break;
+    case 'l':
+      position.push(12);
+      console.log(12);
+      break;
+    case 'm':
+      position.push(13);
+      console.log(13);
+      break;
+    case 'n':
+      position.push(14);
+      console.log(14);
+      break;
+    case 'o':
+      position.push(15);
+      console.log(15);
+      break;
+    case 'p':
+      position.push(16);
+      console.log(16);
+      break;
+    case 'q':
+      position.push(17);
+      console.log(17);
+      break;
+    case 'r':
+      position.push(18);
+      console.log(18);
+      break;
+    case 's':
+      position.push(19);
+      console.log(19);
+      break;
+    case 't':
+      position.push(20);
+      console.log(20);
+      break;
+    case 'u':
+      position.push(21);
+      console.log(21);
+      break;
+    case 'v':
+      position.push(22);
+      console.log(22);
+      break;
+    case 'w':
+      position.push(23);
+      console.log(23);
+      break;
+    case 'x':
+      position.push(24);
+      console.log(24);
+      break;
+    case 'y':
+      position.push(25);
+      console.log(25);
+      break;
+    case 'z':
+      position.push(26);
+      console.log(26);
+      break;
+    default:
+      console.log('Carattere non trovato');
+      break;
+  }
+}
+console.log(charactersArray)
+console.log(position);
